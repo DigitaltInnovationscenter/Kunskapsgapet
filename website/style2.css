@@ -1,0 +1,96 @@
+* {
+    /* Makes all text "white" */
+    color: #FDFEFF;
+    font-family: open sans, sans serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: relative;
+    width: 100%;
+
+    background: #001325;
+}
+
+header {
+    position: static;
+    width: 100%;
+    height: 150px;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(0, 19, 37, 0.6);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+h5 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+h6, .navbar li a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.15px;
+    text-decoration: none;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+    position: absolute;
+    width: -webkit-fill-available;
+}
+
+.header-logo-container {
+    position: static;
+    width: 320px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.header-logo {
+    /* Added to make img the same size as container */
+    width: inherit;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+
+    position: static;
+}
+
+.navbar li {
+    position: static;
+    color: #FDFEFF;
+
+    /* Makes list horizontal */
+    display: inline;
+
+    /* Margin between li objects */
+    margin: 0px 16px;
+}
