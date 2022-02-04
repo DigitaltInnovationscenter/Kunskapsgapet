@@ -72,7 +72,7 @@ const starFieldBG = () => {
         new THREE.PointsMaterial({
             size: 0.05,
             map: loader.load(
-                "./assets/images/sp1.png"
+                "../assets/images/sp1.png"
             ),
             transparent: true,
             color: "#FFDDFF"
@@ -80,7 +80,7 @@ const starFieldBG = () => {
         new THREE.PointsMaterial({
             size: 0.075,
             map: loader.load(
-                "./assets/images/sp2.png"
+                "../assets/images/sp2.png"
             ),
             transparent: true,
 
