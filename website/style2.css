@@ -40,6 +40,15 @@ h1 {
     letter-spacing: -1.5px;
 }
 
+h2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    letter-spacing: -0.5px;
+}
+
 h3 {
     font-style: normal;
     font-weight: normal;
@@ -166,10 +175,14 @@ h6, .navbar li a {
     margin: 12px 0px;
 }
 
-.congratulations-container {
-    background-image: url(./img/stars2.png);
-    background-size: 1100px;
-    /* opacity: 0.5; */
+#c {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 1500ms ease-out;
 }
 
 .congratulations-text-container {
@@ -180,4 +193,13 @@ h6, .navbar li a {
 .congratulations-text-container h3, .congratulations-text-container h4 {
     margin: 12px 0px;
     text-align: center;
+}
+
+.quiz-site {
+    position: absolute;
+}
+
+.frame-quiz {
+    position: absolute;
+    margin-top: 100px;
 }
