@@ -175,27 +175,27 @@ h6, .navbar li a {
     margin: 12px 0px;
 }
 
-
-
 .congratulations-text-container {
     width: 50%;
-    color: #FDFEFF 100%;
+    flex: none;
+    height: 100%;
 }
 
 .congratulations-text-container h3, .congratulations-text-container h4 {
     margin: 12px 0px;
     text-align: center;
 }
+
 #stars {
-    position: relative;
-    height: 200px;
+    position: absolute;
+    height: 300px;
     left: 0px;
-    top: 0px;
     width: 100%;
 
     z-index: -1;
     opacity: 1;
 }
+
 .quiz-site {
     position: absolute;
 }
