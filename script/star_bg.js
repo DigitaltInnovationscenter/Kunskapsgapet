@@ -36,7 +36,7 @@ const starFieldBG = () => {
 
     const canvas = document.getElementById("c");
     const renderer = new THREE.WebGLRenderer({ canvas });
-    renderer.setClearColor(new THREE.Color("#1c1624"));
+    renderer.setClearColor(new THREE.Color("#001325"));
     const scene = new THREE.Scene();
 
     // light source
