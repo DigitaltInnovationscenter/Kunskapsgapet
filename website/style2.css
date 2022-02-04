@@ -186,7 +186,13 @@ h6, .navbar li a {
     margin: 12px 0px;
     text-align: center;
 }
-.stars {
+#stars {
+    position: relative;
+    height: 200px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+
     z-index: -1;
     opacity: 1;
 }

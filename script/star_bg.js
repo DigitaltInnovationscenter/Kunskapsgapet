@@ -13,8 +13,8 @@ const getRandomParticelPos = (particleCount) => {
 
 const resizeRendererToDisplaySize = (renderer) => {
     const container = document.getElementById("stars");
-    const width = container.clientWidth;
-    const height = container.clientHeight; 
+    const width = container.offsetWidth;
+    const height = container.offsetHeight; 
     const needResize = container.width !== width || container.height !== height;
     // resize only when necessary
     if (needResize) {
@@ -39,8 +39,8 @@ const starFieldBG = () => {
 
     const container = document.getElementById("stars");
     const renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true} );
-    const width = container.clientWidth;
-    const height = container.clientHeight; 
+    const width = container.offsetWidth;
+    const height = container.offsetHeight; 
     
 
     renderer.setClearColor(new THREE.Color("#001325"),0);
