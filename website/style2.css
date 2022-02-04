@@ -175,15 +175,7 @@ h6, .navbar li a {
     margin: 12px 0px;
 }
 
-#c {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    transition: opacity 1500ms ease-out;
-}
+
 
 .congratulations-text-container {
     width: 50%;
@@ -194,7 +186,10 @@ h6, .navbar li a {
     margin: 12px 0px;
     text-align: center;
 }
-
+.stars {
+    z-index: -1;
+    opacity: 1;
+}
 .quiz-site {
     position: absolute;
 }

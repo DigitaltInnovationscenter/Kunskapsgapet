@@ -1,6 +1,6 @@
 import * as THREE from './vendor/three.module.js';
 
-const canvas = document.getElementById("c");
+//const canvas = document.getElementById("stars");
 
 const getRandomParticelPos = (particleCount) => {
     const arr = new Float32Array(particleCount * 3);
@@ -9,11 +9,13 @@ const getRandomParticelPos = (particleCount) => {
     }
     return arr;
 };
+
+
 const resizeRendererToDisplaySize = (renderer) => {
-    const canvas = renderer.domElement;
-    const width = canvas.clientWidth;
-    const height = canvas.clientHeight;
-    const needResize = canvas.width !== width || canvas.height !== height;
+    const container = document.getElementById("stars");
+    const width = container.clientWidth;
+    const height = container.clientHeight; 
+    const needResize = container.width !== width || container.height !== height;
     // resize only when necessary
     if (needResize) {
         //3rd parameter `false` to change the internal canvas size
@@ -21,6 +23,7 @@ const resizeRendererToDisplaySize = (renderer) => {
     }
     return needResize;
 };
+
 
 // mouse
 let mouseX = 0;
@@ -34,9 +37,16 @@ document.addEventListener("mousemove", (e) => {
 
 const starFieldBG = () => {
 
-    const canvas = document.getElementById("c");
-    const renderer = new THREE.WebGLRenderer({ canvas });
-    renderer.setClearColor(new THREE.Color("#001325"));
+    const container = document.getElementById("stars");
+    const renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true} );
+    const width = container.clientWidth;
+    const height = container.clientHeight; 
+    
+
+    renderer.setClearColor(new THREE.Color("#001325"),0);
+    renderer.setSize(width, height, false);
+    container.appendChild( renderer.domElement );
+
     const scene = new THREE.Scene();
 
     // light source
@@ -47,11 +57,11 @@ const starFieldBG = () => {
 
     // camera
     const fov = 75,
-        aspect = 2,
+        aspect = width/height,
         near = 1.5,
         far = 5;
     const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    camera.position.z = 0;
+    camera.position.z = -1;
 
     // Geometry
     const geometrys = [new THREE.BufferGeometry(), new THREE.BufferGeometry()];
@@ -97,6 +107,7 @@ const starFieldBG = () => {
 
         //time *= 0.01; //in seconds
 
+        
         if (resizeRendererToDisplaySize(renderer)) {
             const canvas = renderer.domElement;
 
@@ -104,7 +115,7 @@ const starFieldBG = () => {
             camera.aspect = canvas.clientWidth / canvas.clientHeight;
             camera.updateProjectionMatrix();
         }
-
+        
         starsT1.position.x = mouseX * 0.0005;
         starsT1.position.y = mouseY * -0.0005;
 
