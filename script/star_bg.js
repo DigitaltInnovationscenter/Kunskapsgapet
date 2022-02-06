@@ -61,18 +61,19 @@ const starFieldBG = () => {
         near = 1.5,
         far = 5;
     const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    camera.position.z = -1;
+    
+    camera.position.z = 5;
 
     // Geometry
     const geometrys = [new THREE.BufferGeometry(), new THREE.BufferGeometry()];
 
     geometrys[0].setAttribute(
         "position",
-        new THREE.BufferAttribute(getRandomParticelPos(7350), 3)
-    );
+        new THREE.BufferAttribute(getRandomParticelPos(3350), 3)
+        );
     geometrys[1].setAttribute(
         "position",
-        new THREE.BufferAttribute(getRandomParticelPos(1500), 3)
+        new THREE.BufferAttribute(getRandomParticelPos(1050), 3)
     );
 
     const loader = new THREE.TextureLoader();
@@ -85,16 +86,16 @@ const starFieldBG = () => {
                 "../assets/images/sp1.png"
             ),
             transparent: true,
-            color: "#FFDDFF"
+            color: "#5555FF"
         }),
         new THREE.PointsMaterial({
-            size: 0.075,
+            size: 0.375,
             map: loader.load(
                 "../assets/images/sp2.png"
             ),
             transparent: true,
 
-            color: "#DDFFFF"
+            color: "#DDDDFF"
         })
     ];
 
@@ -105,7 +106,7 @@ const starFieldBG = () => {
 
     const render = (time) => {
 
-        //time *= 0.01; //in seconds
+        time *= 0.0001; //in seconds
 
         
         if (resizeRendererToDisplaySize(renderer)) {
@@ -121,6 +122,12 @@ const starFieldBG = () => {
 
         starsT2.position.x = mouseX * 0.0001;
         starsT2.position.y = mouseY * -0.0001;
+
+        camera.position.z = -time;
+        
+//        if ( camera.position.z < 3 )  {
+//             camera.position.z = 5; 
+//        };
 
         // Re-render the scene
         renderer.render(scene, camera);
