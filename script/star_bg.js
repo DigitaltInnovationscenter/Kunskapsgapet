@@ -107,7 +107,7 @@ const starFieldBG = () => {
     const render = (time) => {
 
         time *= 0.0001; //in seconds
-
+        
         
         if (resizeRendererToDisplaySize(renderer)) {
             const canvas = renderer.domElement;
@@ -117,17 +117,14 @@ const starFieldBG = () => {
             camera.updateProjectionMatrix();
         }
         
-        starsT1.position.x = mouseX * 0.0005;
-        starsT1.position.y = mouseY * -0.0005;
+        starsT1.position.x = mouseX * 0.001;
+        starsT1.position.y = mouseY * -0.001;
 
-        starsT2.position.x = mouseX * 0.0001;
-        starsT2.position.y = mouseY * -0.0001;
+        starsT2.position.x = mouseX * 0.0006;
+        starsT2.position.y = mouseY * -0.0006;
 
-        camera.position.z = -time;
-        
-//        if ( camera.position.z < 3 )  {
-//             camera.position.z = 5; 
-//        };
+        camera.position.z = Math.sin(time);
+        camera.rotation.z = Math.sin(time);
 
         // Re-render the scene
         renderer.render(scene, camera);
