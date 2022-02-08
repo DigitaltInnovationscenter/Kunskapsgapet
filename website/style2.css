@@ -196,6 +196,11 @@ h6, .navbar li a {
     opacity: 1;
 }
 
+.more-quiz-container {
+    flex-direction: column;
+    text-align: center;
+}
+
 .quiz-site {
     position: absolute;
 }

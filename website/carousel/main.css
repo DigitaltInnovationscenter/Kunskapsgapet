@@ -1,42 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 10px;
-  font-family: 'DM Sans', sans-serif;
-  transition: background .4s ease-in;
-  background-color: #c394f8;
-}
-
 input[type=radio] {
   display: none;
 }
 
-.card {
-  position: absolute;
-  width: 60%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transition: transform .4s ease;
-  cursor: pointer;
-}
-
-.container {
+.cards-container {
   width: 100%;
   max-width: 800px;
   max-height: 600px;
@@ -48,6 +16,31 @@ input[type=radio] {
   align-items: center;
 }
 
+.card {
+  /* positions cards beside each other */
+  position: absolute;
+  
+  /* Positions content inside card */
+  flex-direction: column;
+  
+  /* Design of card */
+  width: 240px;
+  height: 340px;
+  background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(168px);
+
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 29.4266px;
+  border: 1px solid #fdfeff;
+
+
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
 .cards {
   position: relative;
   width: 100%;
@@ -55,12 +48,12 @@ input[type=radio] {
   margin-bottom: 20px;
 }
 
-img {
+/* img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
-}
+} */
 
 #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
   transform: translatex(-40%) scale(.8);
