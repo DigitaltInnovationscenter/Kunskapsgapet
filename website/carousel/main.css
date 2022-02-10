@@ -16,12 +16,23 @@ input[type=radio] {
   align-items: center;
 }
 
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
 .card {
   /* positions cards beside each other */
   position: absolute;
   
   /* Positions content inside card */
+  display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   
   /* Design of card */
   width: 240px;
@@ -33,19 +44,11 @@ input[type=radio] {
   border-radius: 29.4266px;
   border: 1px solid #fdfeff;
 
-
   left: 0;
   right: 0;
   margin: auto;
   transition: transform .4s ease;
   cursor: pointer;
-}
-
-.cards {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 20px;
 }
 
 /* img {
