@@ -246,6 +246,31 @@ h6, .navbar li a {
     margin-top: 400px;
 }
 
+.about-ic-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-ic-logo-container {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.about-ic-logo-container img {
+    width: 100%;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+}
+
+.logos img {
+    margin: 20px;
+}
+
 .quiz-site {
     position: absolute;
 }
