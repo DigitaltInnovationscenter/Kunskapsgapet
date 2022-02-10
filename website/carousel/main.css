@@ -37,7 +37,6 @@ input[type=radio] {
   /* Design of card */
   width: 240px;
   height: 340px;
-  background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%);
   backdrop-filter: blur(168px);
 
   /* Note: backdrop-filter has minimal browser support */
@@ -51,7 +50,19 @@ input[type=radio] {
   cursor: pointer;
 }
 
+<<<<<<< Updated upstream
  img {
+=======
+.card img {
+  width: 70%;
+}
+
+.img1 {
+  background-image: url("../img/woods.jpg");
+}
+
+/* img {
+>>>>>>> Stashed changes
   width: 100%;
   height: 100%;
   top: 0;
