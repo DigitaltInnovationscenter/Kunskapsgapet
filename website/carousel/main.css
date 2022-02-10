@@ -50,15 +50,17 @@ input[type=radio] {
   cursor: pointer;
 }
 
-<<<<<<< Updated upstream
- img {
-=======
-.card img {
-  width: 70%;
+.img1 {
+  background-image: url("../img/trees.jpg");
 }
 
-.img1 {
-  background-image: url("../img/woods.jpg");
+.img2 {
+  background-image: url("../img/building.jpg");
+  background-size: 300px;
+}
+
+.img3 {
+  background-image: url("../img/work.jpg");
 }
 
 /* img {
@@ -68,7 +70,7 @@ input[type=radio] {
   top: 0;
   border-radius: 10px;
   object-fit: cover;
-} 
+}*/
 
 #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
   transform: translatex(-40%) scale(.8);
