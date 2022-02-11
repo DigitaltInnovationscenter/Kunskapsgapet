@@ -195,7 +195,7 @@ h6, .navbar li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .3D-object img {
@@ -212,7 +212,7 @@ h6, .navbar li a {
 }
 
 .wholepage-text-container {
-    width: 50%;
+    width: 70%;
     flex: none;
     height: 100%;
     text-align: center;
@@ -226,6 +226,10 @@ h6, .navbar li a {
 
     z-index: -1;
     opacity: 1;
+}
+
+.congratulations-container {
+    margin-top: 300px;
 }
 
 .more-quiz-container {
