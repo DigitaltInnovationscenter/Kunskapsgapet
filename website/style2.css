@@ -86,6 +86,10 @@ h6, .navbar li a {
     margin-bottom: 8px;
 }
 
+p {
+    margin-bottom: 8px;
+}
+
 #caption {
     font-style: normal; 
     font-weight: normal;
@@ -244,10 +248,6 @@ h6, .navbar li a {
 .carousel-container {
     width: 100%;
     text-align: -webkit-center;
-}
-
-.om-kunskapsgapet-container {
-    margin-top: 400px;
 }
 
 .about-ic-container {
