@@ -1,45 +1,49 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head>
-	<meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-        <link href="./style2.css" rel="stylesheet" />
-        <link href="./carousel/main.css" rel="stylesheet" >
-        <script defer type="module" src="../script/star_bg.js"></script>
-        <title>Kunskapsgapet</title>
-    </head>
-    <body>
-        <!-- Header -->
-        <header>
-            <!-- Header content -->
-            <div class="header-content">
-                <!-- Header logo container -->
-                <div class="header-logo-container">
-                    <!-- Header logo -->
-                    <img class="header-logo" src="./img/Innovationscenter_logo_neg (1).png"></img>
-                </div>
-                <!-- Header navigation -->
-                <nav class="header-nav">
-                    <ul class="navbar"> 
-                        <li><a href="">Gå till quiz</a></li>
-                        <li><a href="">Om kunskapgapet</a></li>
-                        <li><a href="">Om oss</a></li>
-                    </ul>
-                </nav>            
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="./style2.css" rel="stylesheet" />
+    <link href="./carousel/main.css" rel="stylesheet">
+    <script defer type="module" src="../script/star_bg.js"></script>
+    <title>Kunskapsgapet</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Header content -->
+        <div class="header-content">
+            <!-- Header logo container -->
+            <div class="header-logo-container">
+                <!-- Header logo -->
+                <img class="header-logo" src="./img/Innovationscenter_logo_neg (1).png"></img>
             </div>
-        </header>
-        <!-- Container of welcome and start quiz -->
-        <section class="start">
-            <!-- Container of welcome and start quiz text and button -->
-            <div class="welcome-container">                
-                <!-- Container 2 of welcome and start quiz text and button -->
-                <div class="wholepage-text-container">
-                    <!-- Title -->
-                    <h2>Kunskapsgapet</h2>
-                    <!-- Slogan -->
-                    <h5>Vad är dina missförstånd kring Arbetsförmedlingen och arbetsmarknaden?</h5>
-                </div>
-                            <div class="carousel-container">
+            <!-- Header navigation -->
+            <nav class="header-nav">
+                <ul class="navbar">
+                    <li><a href="">Gå till quiz</a></li>
+                    <li><a href="">Om kunskapgapet</a></li>
+                    <li><a href="">Om oss</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Container of welcome and start quiz -->
+    <section class="start">
+        <!-- Container of welcome and start quiz text and button -->
+        <div class="welcome-container">
+            <!-- Container 2 of welcome and start quiz text and button -->
+            <div class="wholepage-text-container">
+                <!-- Title -->
+                <h2>Kunskapsgapet</h2>
+                <br>
+                <!-- Slogan -->
+                <h5>Vad är dina missförstånd kring Arbetsförmedlingen och arbetsmarknaden?</h5>
+                <br>
+            </div>
+            <div class="carousel-container">
                 <div class="cards-container">
                     <input type="radio" name="slider" id="item-1" checked>
                     <input type="radio" name="slider" id="item-2">
@@ -49,112 +53,122 @@
                             <!-- Quiz title -->
                             <h6>Miljön</h6>
                             <!-- Quiz description -->
-                            <p id="caption">Fördomar kring miljön</p>    
+                            <p id="caption">Fördomar kring miljön</p>
                             <!-- Start quiz button -->
-                            <button class="btn-small">Starta quiz</button>  
+                            <button disabled class="btn-small">Starta quiz</button>
                         </label>
                         <label class="card img3" for="item-2" id="song-2">
                             <!-- Quiz title -->
                             <h6>Arbetsmarknaden</h6>
                             <!-- Quiz description -->
-                            <p id="caption">Fördomar kring arbetsmarknaden</p>      
+                            <p id="caption">Fördomar kring arbetsmarknaden</p>
                             <!-- Start quiz button -->
-                            <button class="btn-small">Starta quiz</button>  
+                            <button class="btn-small" onclick="location.href='../quiz/index.html';">Starta quiz</button>
                         </label>
                         <label class="card img2" for="item-3" id="song-3">
                             <!-- Quiz title -->
                             <h6>Övrigt</h6>
                             <!-- Quiz description -->
-                            <p id="caption">Lite allt möjligt.</p>      
+                            <p id="caption">Fler Quiz kan skapas...</p>
                             <!-- Start quiz button -->
-                            <button class="btn-small">Starta quiz</button>                              
+                            <button disabled class="btn-small">Starta Quiz</button>
                         </label>
                     </div>
                 </div>
             </div>
 
-            </div>
-        </section>
+        </div>
+    </section>
 
 
-        <!-- Congratulations container -->
-        <section class="congratulations-container">
-            <!-- Congratulations text container 2 -->
-            <div class="wholepage-text-container">
-                <!-- Stars in the background -->
-                <div id="stars"> 
-                </div>
-                <!-- Text and quote container -->
-                <div class="text-and-quote-container">
-                    <!-- Title "congratulations" -->
-                    <h3>Grattis!</h3>
-                    <!-- Text and quote -->
-                    <h6>Du är ett steg närmare att ha färre fördomar om arbetsmarknaden och
-                    Arbetsförmedlingen.</h6>  
-                    <h6>“I want people, when they realize they have been wrong about the world, to feel not embarrassment, but that childlike sense of wonder, inspiration, and curiosity that I remember from the circus, and that I still get every time I discover I have been wrong: “Wow, how is that even possible?”</h6>
-                    <h6><i>― Hans Rosling, Factfulness: Ten Reasons We're Wrong About the World—and Why Things Are Better Than You Think </i></h6>
-                </div>
+    <!-- Congratulations container -->
+    <section class="congratulations-container">
+        <!-- Congratulations text container 2 -->
+        <div class="wholepage-text-container">
+            <!-- Stars in the background -->
+            <div id="stars">
             </div>
-        </section>
-        
-        <!-- About kunskapsgapet container -->
-        <section class="om-kunskapsgapet-container">
-                <!-- About kunskapsgapet 3D object container -->
-                <div class="3D-object">
-                    <!-- 3D object -->
-                    <img src="./img/3D-climber.png" alt="3D-climber">
-                </div>
-                <!-- About kunskapsgapet text container -->
-                <div class="halfpage-text-container">
-                    <!-- About kunskapsgapet title -->
-                    <h3>Om kunskapsgapet</h3>
-                    <!-- About kunskapsgapet text -->
-                    <p>Hans Rosling är en person som inspirerar med sin förmåga att sprida kunskap och utmana våra invanda tankar. Han finns inte längre med oss men hans anda lever vidare i Gapminder https://www.gapminder.org/.</p>
-                    <!-- About kunskapsgapet text -->
-                    <p>Vi har inspirerats av Gapminders ”Uppgrade your worldview- quizar” och fått deras tillstånd att göra en egen quiz. Vi vill på detta sätt utmana dig och dina eventuella fördomar om Arbetsförmedlingen och arbetsmarknaden.</p>
-                    <p>Vi har gjort denna prototyp i Unity med öppna data. Vår tanke är att kollegor på Af skall kunna prova på att använda prototypen och känna på om den skall utvecklas vidare. Kontakta oss!</p>
-                </div>
-        </section>
-        <!-- About Innovationscentret container -->
-        <section class="about-ic-container">
-                <!-- About Innovationscentret text -->
-                <div class="wholepage-text-container">
-                    <!-- Innovationscentret logo container -->
-                    <div class="about-ic-logo-container">
-                        <!-- Innovationscentret logo -->
-                        <img src="./img/Innovationscenter_logo_neg (1).png" alt="Innovationscenter logga">
-                    </div>
-                    <!-- Innovationscentret description -->
-                    <h6>Här kan vi ha en kort text om Innovationscenter, dela våra kanaler och möjligtvis få in en bild för att det ska bli en snyggare webbsida. Vi borde även länka till vår egna webbsida här.</h6>
-                </div>
-                <!-- Social media links container -->
-                <div class="logos">
-                    <!-- Social media link container -->
-                    <div>
-                        <!-- Social media link -->
-                        <img src="./img/facebook.svg" alt="">
-                    </div>
-                    <!-- Social media link container -->
-                    <div>
-                        <!-- Social media link -->
-                        <img src="./img/github.svg" alt="">
-                    </div>
-                    <!-- Social media link container -->
-                    <div>
-                        <!-- Social media link -->
-                        <img src="./img/instagram.svg" alt="">
-                    </div>
-                    <!-- Social media link container -->
-                    <div>
-                        <!-- Social media link -->
-                        <img src="./img/linkedin.svg" alt="">
-                    </div>
-                    <!-- Social media link container -->
-                    <div>
-                        <!-- Social media link -->
-                        <img src="./img/twitter.svg" alt="">
-                    </div>
-                </div>
-        </section>
-    </body>
+            <!-- Text and quote container -->
+            <div class="text-and-quote-container">
+                <!-- Title "congratulations" -->
+                <h3>Grattis!</h3>
+                <!-- Text and quote -->
+                <h6>Du är ett steg närmare att ha färre fördomar om arbetsmarknaden och
+                    Arbetsförmedlingen.</h6>
+                <h6>“I want people, when they realize they have been wrong about the world, to feel not embarrassment,
+                    but that childlike sense of wonder, inspiration, and curiosity that I remember from the circus, and
+                    that I still get every time I discover I have been wrong: “Wow, how is that even possible?”</h6>
+                <h6><i>― Hans Rosling, Factfulness: Ten Reasons We're Wrong About the World—and Why Things Are Better
+                        Than You Think </i></h6>
+            </div>
+        </div>
+    </section>
+
+    <!-- About kunskapsgapet container -->
+    <section class="om-kunskapsgapet-container">
+        <!-- About kunskapsgapet 3D object container -->
+        <div class="3D-object">
+            <!-- 3D object -->
+            <img src="./img/3D-climber.png" alt="3D-climber">
+        </div>
+        <!-- About kunskapsgapet text container -->
+        <div class="halfpage-text-container">
+            <!-- About kunskapsgapet title -->
+            <h3>Om kunskapsgapet</h3>
+            <!-- About kunskapsgapet text -->
+            <p>Hans Rosling är en person som inspirerar med sin förmåga att sprida kunskap och utmana våra invanda
+                tankar. Han finns inte längre med oss men hans anda lever vidare i Gapminder https://www.gapminder.org/.
+            </p>
+            <!-- About kunskapsgapet text -->
+            <p>Vi har inspirerats av Gapminders ”Uppgrade your worldview- quizar” och fått deras tillstånd att göra en
+                egen quiz. Vi vill på detta sätt utmana dig och dina eventuella fördomar om Arbetsförmedlingen och
+                arbetsmarknaden.</p>
+            <p>Vi har gjort denna prototyp i Unity med öppna data. Vår tanke är att kollegor på Af skall kunna prova på
+                att använda prototypen och känna på om den skall utvecklas vidare. Kontakta oss!</p>
+        </div>
+    </section>
+    <!-- About Innovationscentret container -->
+    <section class="about-ic-container">
+        <!-- About Innovationscentret text -->
+        <div class="wholepage-text-container">
+            <!-- Innovationscentret logo container -->
+            <div class="about-ic-logo-container">
+                <!-- Innovationscentret logo -->
+                <img src="./img/Innovationscenter_logo_neg (1).png" alt="Innovationscenter logga">
+            </div>
+            <!-- Innovationscentret description -->
+            <h6>Här kan vi ha en kort text om Innovationscenter, dela våra kanaler och möjligtvis få in en bild för att
+                det ska bli en snyggare webbsida. Vi borde även länka till vår egna webbsida här.</h6>
+        </div>
+        <!-- Social media links container -->
+        <div class="logos">
+            <!-- Social media link container -->
+            <div>
+                <!-- Social media link -->
+                <img src="./img/facebook.svg" alt="">
+            </div>
+            <!-- Social media link container -->
+            <div>
+                <!-- Social media link -->
+                <img src="./img/github.svg" alt="">
+            </div>
+            <!-- Social media link container -->
+            <div>
+                <!-- Social media link -->
+                <img src="./img/instagram.svg" alt="">
+            </div>
+            <!-- Social media link container -->
+            <div>
+                <!-- Social media link -->
+                <img src="./img/linkedin.svg" alt="">
+            </div>
+            <!-- Social media link container -->
+            <div>
+                <!-- Social media link -->
+                <img src="./img/twitter.svg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
