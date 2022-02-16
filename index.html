@@ -1,33 +1,161 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="sv">
     <head>
 	<meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-        <link href="./website/style2.css" rel="stylesheet" />
+        <link href="./css/main.css" rel="stylesheet" />
+        <link href="./css/carousel.css" rel="stylesheet" >
+        <script defer type="module" src="../js/star_bg.js"></script>
+        <title>Kunskapsgapet</title>
     </head>
-    
     <body>
-    
-        <header class="quiz-site">
+        <!-- Header -->
+        <header>
             <!-- Header content -->
             <div class="header-content">
                 <!-- Header logo container -->
                 <div class="header-logo-container">
                     <!-- Header logo -->
-                    <img class="header-logo" src="./website/img/Innovationscenter_logo_neg (1).png"></img>
+                    <img class="header-logo" src="./img/Innovationscenter_logo_neg (1).png"></img>
                 </div>
                 <!-- Header navigation -->
                 <nav class="header-nav">
                     <ul class="navbar"> 
-                        <li><a href="./website/index.html">Tillbaka till startsida</a></li>
+                        <li><a href="#start">Start</a></li>
+                        <li><a href="#about-kunskapsgapet">Om kunskapgapet</a></li>
+                        <li><a href="#about-ic">Om oss</a></li>
                     </ul>
                 </nav>            
             </div>
         </header>
-    <div class="obs"><p id="caption"><i>OBS! Funkar ej som mobil version.</i></p></div>
-	<iframe class="frame-quiz" src='./quiz/index.html' width="960px" height="540px" style="border:none;" scrolling="no">
-	</iframe>
-    
-    </body>
+        <!-- Container of welcome and start quiz -->
+        <section class="start" id="start">
+            <!-- Container of welcome and start quiz text and button -->
+            <div class="welcome-container">                
+                <!-- Container 2 of welcome and start quiz text and button -->
+                <div class="wholepage-text-container">
+                    <!-- Title -->
+                    <h2>Kunskapsgapet</h2>
+                    <!-- Slogan -->
+                    <h5>Vad är dina missförstånd kring Arbetsförmedlingen och arbetsmarknaden?</h5>
+                </div>
+                <div class="carousel-container">
+                    <div class="cards-container">
+                        <input type="radio" name="slider" id="item-1" checked>
+                        <input type="radio" name="slider" id="item-2">
+                        <input type="radio" name="slider" id="item-3">
+                        <div class="cards">
+                            <label class="card img1" for="item-1" id="song-1">
+                                <!-- Quiz title -->
+                                <h6>Miljön</h6>
+                                <!-- Quiz description -->
+                                <p id="caption">Fördomar kring miljön</p>    
+                                <!-- Start quiz button -->
+                                <a href="../quiz.html" id="button-a"><button class="btn-small">Starta quiz</button></a>  
+                            </label>
+                            <label class="card img3" for="item-2" id="song-2">
+                                <!-- Quiz title -->
+                                <h6>Arbetsmarknaden</h6>
+                                <!-- Quiz description -->
+                                <p id="caption">Fördomar kring arbetsmarknaden</p>      
+                                <!-- Start quiz button -->
+                                <a href="../quiz.html" id="button-a"><button class="btn-small">Starta quiz</button></a>  
+                            </label>
+                            <label class="card img2" for="item-3" id="song-3">
+                                <!-- Quiz title -->
+                                <h6>Övrigt</h6>
+                                <!-- Quiz description -->
+                                <p id="caption">Fler Quiz kan skapas...</p>      
+                                <!-- Start quiz button -->
+                                <a href="../quiz.html" id="button-a"><button class="btn-small">Starta quiz</button></a>  
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+
+        <!-- Congratulations container -->
+        <section class="congratulations-container">
+            <!-- Congratulations text container 2 -->
+            <div class="wholepage-text-container">
+                <!-- Stars in the background -->
+                <div id="stars"> 
+                </div>
+                <!-- Text and quote container -->
+                <div class="text-and-quote-container">
+                    <!-- Title "congratulations" -->
+                    <h3>Grattis!</h3>
+                    <!-- Text and quote -->
+                    <h6>Du är ett steg närmare att ha färre fördomar om arbetsmarknaden och
+                    Arbetsförmedlingen. <br><br> 
+                    “I want people, when they realize they have been wrong about the world, to feel not embarrassment, but that childlike sense of wonder, inspiration, and curiosity that I remember from the circus, and that I still get every time I discover I have been wrong: “Wow, how is that even possible?” <br>
+                    <i>― Hans Rosling, Factfulness: Ten Reasons We're Wrong About the World—and Why Things Are Better Than You Think </i></h6>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About kunskapsgapet container -->
+        <section class="about-kunskapsgapet-container" id="about-kunskapsgapet">
+                <!-- About kunskapsgapet 3D object container -->
+                <div id="rocket">
+                    <!-- 3D object -->
+                    <img src="./img/3D-rocket.svg" alt="3D-climber">
+                </div>
+                <!-- About kunskapsgapet text container -->
+                <div class="halfpage-text-container">
+                    <!-- About kunskapsgapet title -->
+                    <h4 id="dark">Om kunskapsgapet</h4>
+                    <!-- About kunskapsgapet text -->
+                    <p id="dark">Hans Rosling är en person som inspirerar med sin förmåga att sprida kunskap och utmana våra invanda tankar. Han finns inte längre med oss men hans anda lever vidare i Gapminder. <a href="https://www.gapminder.org/" target="_blank" id="dark">Klicka här (ny flik)</a> för att besöka Gapminders webbsida. <br><br>
+                    Vi har inspirerats av Gapminders <a href="https://upgrader.gapminder.org/" target="_blank" id="dark">”Worldview Upgrader”</a> och fått deras tillstånd att göra vår egna version. Vi vill på detta sätt utmana dig och dina eventuella fördomar om Arbetsförmedlingen och arbetsmarknaden. <br><br>
+                    Vi har gjort denna prototyp med exempeldata. Vi tror på att man lär sig mer och snabbare om man har roligt på vägen, därför har vi försökt utveckla ett koncept där man kan sprida kunskap via gamification. Vår tanke är att kollegor på Af skall kunna prova på att använda prototypen och känna på om konceptet ska utvecklas vidare.<br><br>
+                    Kontakta oss vid intresse, länkar till sociala medier och webbsida finns under "Om oss"!</p>
+                    <!-- Vill vi få in nåt om gamfiication i texten? -->
+                </div>
+        </section>
+        <!-- About Innovationscentret container -->
+        <section class="about-ic-container" id="about-ic">
+                <!-- About Innovationscentret text -->
+                <div class="wholepage-text-container">
+                    <!-- Innovationscentret logo container -->
+                    <div class="about-ic-logo-container">
+                        <!-- Innovationscentret logo -->
+                        <img src="./img/Innovationscenter_logo_neg (1).png" alt="Innovationscenter logga">
+                    </div>
+                    <!-- Innovationscentret description -->
+                    <p>Digitalt Innovationscenter är en del av Arbetsförmedlingen som arbetar med innovation för framtidens arbetsmarknad. Framtidens arbetsmarknad är vår arbetsplats. Vi utforskar, prototypar och diskuterar innovation tillsammans med dig. <br> <br>
+                    <a href="https://www.digitaltinnovationscenter.se/" target="_blank">Klicka här (ny flik)</a> för att besöka vår webbsida!</p>
+                </div>
+                <!-- Social media links container -->
+                <div class="logos">
+                    <!-- Social media link container -->
+                    <div>
+                        <!-- Social media link -->
+                        <a href="https://www.facebook.com/DigitaltInnovationscenter"><img src="./img/facebook.svg" alt="Facebook icon"></a>
+                    </div>
+                    <!-- Social media link container -->
+                    <div>
+                        <!-- Social media link -->
+                        <a href="https://github.com/DigitaltInnovationscenter"><img src="./img/github.svg" alt="Github icon"></a>
+                    </div>
+                    <!-- Social media link container -->
+                    <div>
+                        <!-- Social media link -->
+                        <a href="https://www.instagram.com/digitaltinnovationscenter/"><img src="./img/instagram.svg" alt="Instagram logo"></a>
+                    </div>
+                    <!-- Social media link container -->
+                    <div>
+                        <!-- Social media link -->
+                        <a href="https://www.linkedin.com/company/digitalt-innovationscenter/"><img src="./img/linkedin.svg" alt="Linkedin logo"></a>
+                    </div>
+                    <!-- Social media link container -->
+                    <div>
+                        <!-- Social media link -->
+                        <a href="https://twitter.com/DigitaltInnovc"><img src="./img/twitter.svg" alt="Twitter logo"></a>
+                    </div>
+                </div>
+        </section>
+    </body>
 </html>
