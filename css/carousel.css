@@ -59,7 +59,6 @@ input[type=radio] {
 
 .img3 {
   background-image: url("../img/building.jpg");
-  background-size: 300px;
 }
 
 
@@ -74,13 +73,13 @@ input[type=radio] {
 }*/
 
 #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
-  transform: translatex(-40%) scale(.8);
+  transform: translatex(-70%) scale(.8);
   opacity: .4;
   z-index: 0;
 }
 
 #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
-  transform: translatex(40%) scale(.8);
+  transform: translatex(70%) scale(.8);
   opacity: .4;
   z-index: 0;
 }
