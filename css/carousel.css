@@ -49,19 +49,20 @@ input[type=radio] {
   transition: transform .4s ease;
   cursor: pointer;
 }
-
 .img1 {
-  background-image: url("../img/trees.jpg");
+  background-image: url("../img/work.jpg");
 }
 
 .img2 {
+  background-image: url("../img/trees.jpg");
+}
+
+.img3 {
   background-image: url("../img/building.jpg");
   background-size: 300px;
 }
 
-.img3 {
-  background-image: url("../img/work.jpg");
-}
+
 
 /* img {
 >>>>>>> Stashed changes
