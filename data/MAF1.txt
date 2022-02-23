@@ -1,0 +1,32 @@
+name=Mijöfrågor på AF
+id=MAF1
+
+question=Hur många utskrifter gjordes på arbetsförmedlingen under 2019?
+answer1=16 682 092
+answer2=7 087 435
+answer3=3 114 191
+feedback1=Du svarade rätt, men 44% tror att siffran är lägre. Hur blev det nu igen med det papperslösa kontoret...?
+feedback2=Tyvärr, inte rätt, det är ungefär dubbelt så mycket.
+feedback3=Du och 26% av alla valde det här, men tyvärr är siffran mycket högre.
+correct=1
+source=
+
+question=Hur mycket kan vi minska CO2-effekten av ett zoommöte genom att stänga våra kameror?
+answer1=27%
+answer2=53%
+answer3=96%
+feedback1=35% av de som svarade valde detta, men det är fel. Att stänga av video gör en mycket större skillnad.
+feedback2=Majoriteten av människor valde det här alternativet, men det är fel svar. Att stänga av video gör stor skillnad.
+feedback3=Bra! Endast 22% identifierade detta som det korrekta svaret.
+correct=3
+source=https://www.sciencedaily.com/releases/2021/01/210114134033.htm
+
+question=Hur stor andel av arbetsförmedlingens anställda hade, per september 2020, genomgått utbildningen "Miljö- och hållbarhet"?
+answer1=4.9%
+answer2=16.3%
+answer3=28.7%
+feedback1=Antalet som fullföljde kursen låg långt under målet, men det var inte riktigt så illa, även om 35% valde detta alternativ.
+feedback2=Du har rätt! Men med ett mål på 70% finns mycket arbete kvar att göra.
+feedback3=Nästan hälften trodde att det var så, men det är tyvärr lite optimistiskt. Den korrekta procentsatsen är mycket lägre än så här.
+correct=2
+source=
