@@ -1,0 +1,63 @@
+name=Introverts
+id=INT1
+
+question=What fraction of the world's population are introverts?
+answer1=Somewhere between a third and a half
+answer2=Not many, probably around a tenth
+answer3=It's very common, about three quarters
+feedback1=That is the right answer, and most people are surprised to find this out!
+feedback2=You might think, from what you hear, that this is the case. But it's a lot higher than that.
+feedback3=While most people have SOME aspects of introversion, the number is not this high.
+correct=1
+source=https://en.wikipedia.org/wiki/Quiet:_The_Power_of_Introverts_in_a_World_That_Can%27t_Stop_Talking
+
+question=Which of these is a trait of an introvert?
+answer1=A lack of close friends
+answer2=A fear of public speaking
+answer3=Being a good listener
+feedback1=Actually no. Introverts usually have a group of very close friends.
+feedback2=Actually this affects about 80% of people, both introvert and extrovert.
+feedback3=Yes! Introverts are excellent listeners, and prefer to listen a long time before giving their input.
+correct=3
+source=https://www.lifehack.org/articles/communication/10-quality-traits-all-introverts-have-even-they-dont-know-2.html
+
+question=On 3 March 2022, how many of the 75,000 ads on Platsbaken listed "introvert" as an advantage?
+answer1=0
+answer2=315
+answer3=4564
+feedback1=This is sadly the case. Society in general still sees introvert as a disability.
+feedback2=If only this were true! The answer is 0. While 47 listed "extrovert" as a positive attribute.
+feedback3=Yeah, right. The answer is 0. While 47 listed "extrovert" as a positive attribute.
+correct=1
+source=
+
+question=Can you help an introvert to become an extrovert?
+answer1=Yes, of course
+answer2=Totally not
+answer3=Probably
+feedback1=No. Despite what many people (often extroverts) think, you can't make an introvert "get over" the way their brain works.
+feedback2=Correct! You can maybe help them pretend to be an extrovert, but their brain will still work the same way.
+feedback3=That's a very careful (but wrong) answer. Would you happen to be an introvert...? ;)
+correct=2
+source=https://www.livescience.com/8500-brains-introverts-reveal-prefer.html
+
+question=Who makes a better leader, an introvert or an extrovert?
+answer1=An extrovert
+answer2=An introvert
+answer3=Both can be equally good
+feedback1=This is not true, even though 95% of leaders and managers are extroverts.
+feedback2=Incorrect, even though many huge companies are led by introverts (Tesla, Apple, Microsoft...)
+feedback3=Yes! Although extrovert bosses tend to lead forcefully, while introverts tend to listen more to employees.
+correct=3
+source=https://www.govexec.com/management/2014/02/5-myths-about-introverts-and-extroverts-work/79055/
+
+question=How many of these are introverts? Spielberg, Lady Gaga, Zuckerberg, Steve Martin, Tom Hanks, Julia Roberts.
+answer1=All of them
+answer2=All expect one
+answer3=Half of them
+feedback1=Yes! Even Lady Gaga. Being an extravagant performer doesn't have to mean you are an extrovert!
+feedback2=Perhaps you were thinking of Lady Gaga? Sorry, they're all introverts!
+feedback3=Nope, they all are! Even Lady Gaga. Being an extravagant performer doesn't have to mean you are an extrovert!
+correct=1
+source=
+
